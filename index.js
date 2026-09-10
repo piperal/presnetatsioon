@@ -6,7 +6,7 @@ async function getProducts() {
         const res = await fetch(`https://fakestoreapi.com/products/${itemNum}`);
 
         if (!res.ok) {
-            throw new Error(`HTTP error! Status: ${res.status}`);
+            throw new Error(`Error! Status: ${res.status}`);
         }
 
         const json = await res.json();
